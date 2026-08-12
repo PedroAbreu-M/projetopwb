@@ -1,86 +1,37 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página Inicial</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+<?php include "cabecalho.php"; ?>
+<style>
+  div{
+    border:1px solid #371e72;
+  }
+</style>
 
+<div class="row">
+  <div class="col-md-4"></div>
 
-</head>
-<body>
+  <div class="col-md-4"><!-- coluna do meio -->
+
+    <div class="card">
     
-    <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">
-        <img src="https://upload.wikimedia.org/wikipedia/pt/b/b4/Corinthians_simbolo.png" alt="Bootstrap" width="70" height="70">
-    </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">HOME</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">CADASTRO</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">RELATÓRIOS</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            SELECIONE A OPÇÃO
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Usúarios</a></li>
-            <li><a class="dropdown-item" href="#">Produtos</a>
-            </li>
-            <li><a class="dropdown-item" href="#">Clientes</a>
-            </li>
-            <li>
-                <hr class="dropdown-divider">
-            </li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
-        </li>
-        
-        
-        
-        
-      </ul>
-      <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Search"/>
-        <button class="btn btn-outline-success" type="submit">Pesquisar</button>
-      </form>
+      <div class="card-body">
+        <form action="" method="POST">
+            <label  for="login">Username</label>
+            <input  class="form-control" type="text" name="login" id="login"/>
+
+            <label  for="senha">Senha</label>
+            <input class="form-control" type="password" name="senha" id="senha"/>
+        <div class="row">
+          <div class="col-md-6"></div>
+          <div class="col-md-6"></div>
+        </div>  
+
+        </form>
+      </div>
     </div>
-  </div>
-</nav>
-<br>
-    <h1> Bem vindo ao sistema </h1>
-
-    <button type="button" class="btn btn-success">
-        Salvar
-    </button>
-    <div class="alert alert-danger" role="alert">
-    Cuidado! Sua nota vai ser I
-</div>
-
-<div class="card">
-  <div class="card-header bg-primary">
-    <span class="text-white fw-bold">Pesquisar </span>
-  </div>
-  <div class="card-body">
-    <p class="card-text">Aqui será o menu de pesquisa</p>
-    <a href="#" class="btn btn-primary">Pesquisar</a>
-  </div>
-</div>
 
 </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-</body>
-</html>
 
+  <div class="col-md-4"></div>
 
+</div>
 
+<?php include "rodape.php"; ?>
