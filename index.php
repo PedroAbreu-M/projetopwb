@@ -1,27 +1,56 @@
 <?php include "cabecalho.php"; ?>
-<style>
-  div{
-    border:1px solid #371e72;
+<?php
+if(isset($_POST["login"]) )
+  {
+    if(empty($_POST["login"]))
+  {
+      $mensagemErro  = "Preencha os dados de login";
   }
+    //Procedimento para banco de dados
+  }
+  else{
+
+  }
+?>
+
+
+<style>
+  
 </style>
 
-<div class="row">
+<div class="row w-100">
   <div class="col-md-4"></div>
 
   <div class="col-md-4"><!-- coluna do meio -->
 
     <div class="card">
-    
       <div class="card-body">
-        <form action="" method="POST">
+    <?php
+
+      if(isset($mensagemErro) && !empty($mensagemErro))
+        {
+          echo '<div class="alert alert-danger">';
+          echo $mensagemErro;
+          echo '</div>';  
+        }
+      ?>
+
+        <form action="index.php" method="POST">
             <label  for="login">Username</label>
             <input  class="form-control" type="text" name="login" id="login"/>
 
             <label  for="senha">Senha</label>
             <input class="form-control" type="password" name="senha" id="senha"/>
-        <div class="row">
-          <div class="col-md-6"></div>
-          <div class="col-md-6"></div>
+        <div class="row mt-3">
+          <div class="col-md-6">
+
+            <button type="submit" class="btn btn-primary">
+              Entrar
+            </button>
+
+            </div>
+          <div class="col-md-6 align-items-center d-flex justify-content-end">
+          <input type="checkbox" class="form-check-input mx-2" value="senha"/>Salvar Senha
         </div>  
 
         </form>
