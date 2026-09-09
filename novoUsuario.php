@@ -16,16 +16,7 @@
                             type="text" />
                 </div>
             </div><!-- Linha do NOME -->
-            <div class="row align-items-center mb-3">
-                <div class="col-2">
-                    Email:
-                </div>
-                <div class="col-10">
-                    <input class="form-control"
-                            name="email"
-                            type="text" />
-                </div>
-            </div> <!-- Linha do Email -->
+        
             <div class="row align-items-center mb-3">
                 <div class="col-2">
                     Login:

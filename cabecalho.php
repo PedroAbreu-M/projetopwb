@@ -9,22 +9,22 @@
     <link rel="stylesheet" href="css/reset.css" />
 </head>
 <body>
+<!-- Abertura correta da tag nav com as classes necessárias do Bootstrap -->
 <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">Navbar</a>
+    
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
+    
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
+        
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-          <a class="nav-link active" aria-current="page" href="./index.php">
-            Home
-          </a>
+          <a class="nav-link active" aria-current="page" href="./index.php">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Features</a>
           <a class="nav-link" href="./usuarios.php">Usuários</a>
         </li>
         <li class="nav-item">
@@ -35,7 +35,9 @@
         </li>
       </ul>
     </div>
-  </div>
+  </div> 
 </nav>
-<div class="container h-75 d-flex align-items-center">
+
+
+<div class="container h-75 d-flex align-items-center pt-5">
 <div class="container h-75 pt-5">
