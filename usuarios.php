@@ -1,6 +1,5 @@
 <?php include "cabecalho.php"; ?>
 <div class="row">
-<div class="row" style="border:1px solid" >
     <div class="col-12">
         <div class="card">
             <div class="card-header">
@@ -14,7 +13,6 @@
                         </a>
                     </div><!-- Fechador da col-2 -->
                     <div class="col-8">
-
                         <div class="input-group mb-3">
                             <input type="text" class="form-control">
                             <button class="btn btn-primary" type="button" >
@@ -30,3 +28,5 @@
 </div><!-- fechador da ROW -->
 
 <?php include "rodape.php"; ?>
+
+
